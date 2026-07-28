@@ -1,7 +1,8 @@
 github_project/
 .DS_Store
 
-backend/__pycache__/
+__pycache__/
+.pytest_cache/
 backend/.venv/
 
 frontend/node_modules/

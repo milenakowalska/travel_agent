@@ -4,7 +4,7 @@ Starter full-stack project with:
 
 - FastAPI backend on port `8000`
 - React + TypeScript frontend on port `5173`
-- PostgreSQL database on port `5432`
+- PostgreSQL database on host port `5433`
 
 ## Run With Docker Compose
 
@@ -25,4 +25,4 @@ Docker Compose creates a PostgreSQL database with these local development settin
 - Password: `travel_agent`
 - Host from backend container: `db`
 - Host from your machine: `localhost`
-- Port: `5432`
+- Port: `5433`
