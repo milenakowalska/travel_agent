@@ -1,9 +1,7 @@
 name: Deploy
 
 on:
-  workflow_run:
-    on:
-      - push
+  push:
     branches:
       - main
 
