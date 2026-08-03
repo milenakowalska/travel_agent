@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import logo from "./images/logo-256.png";
 
 type HealthResponse = {
   status: string;
@@ -34,10 +35,13 @@ function App() {
   return (
     <main className="page">
       <section className="panel">
+        <div className="logoFrame">
+          <img src={logo} alt="Travel Agent logo" className="logo" />
+        </div>
         <p className="eyebrow">Travel Agent</p>
         <h1>Coming soon...</h1>
         <p className="intro">
-          AI-driven agentic App that will help you to plan your next trip!
+          An AI-powered agentic app to help you plan your next trip!
         </p>
 
         <div className="statusRow">
