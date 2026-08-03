@@ -35,10 +35,9 @@ function App() {
     <main className="page">
       <section className="panel">
         <p className="eyebrow">Travel Agent</p>
-        <h1>Your full-stack starter is running.</h1>
+        <h1>Coming soon...</h1>
         <p className="intro">
-          React is talking to FastAPI through the same /api path in local
-          development and production.
+          AI-driven agentic App that will help you to plan your next trip!
         </p>
 
         <div className="statusRow">
