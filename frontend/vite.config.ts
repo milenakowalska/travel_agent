@@ -5,6 +5,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    host: true,
+    allowedHosts: ["travelagent.milenakow.com"]
   },
   test: {
     environment: "jsdom",
