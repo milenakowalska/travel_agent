@@ -3,6 +3,7 @@ github_project/
 
 __pycache__/
 .pytest_cache/
+.ruff_cache/
 backend/.venv/
 
 frontend/node_modules/

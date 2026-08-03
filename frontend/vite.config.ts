@@ -6,7 +6,13 @@ export default defineConfig({
   server: {
     port: 5173,
     host: true,
-    allowedHosts: ["travelagent.milenakow.com"]
+    proxy: {
+      "/api": {
+        target: process.env.VITE_BACKEND_PROXY_TARGET ?? "http://localhost:8000",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
   test: {
     environment: "jsdom",

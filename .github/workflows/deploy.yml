@@ -23,4 +23,9 @@ jobs:
 
             git pull
 
+            cd frontend
+            npm ci
+            npm run build
+
+            cd ..
             docker compose up -d --build

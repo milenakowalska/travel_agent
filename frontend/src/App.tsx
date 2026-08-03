@@ -6,7 +6,7 @@ type HealthResponse = {
   service: string;
 };
 
-const apiUrl = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+const apiUrl = (import.meta.env.VITE_API_URL ?? "/api").replace(/\/$/, "");
 
 function App() {
   const [health, setHealth] = useState<HealthResponse | null>(null);
@@ -37,8 +37,8 @@ function App() {
         <p className="eyebrow">Travel Agent</p>
         <h1>Your full-stack starter is running.</h1>
         <p className="intro">
-          React is talking to FastAPI, and Docker Compose is ready to run the
-          frontend, backend, and PostgreSQL together.
+          React is talking to FastAPI through the same /api path in local
+          development and production.
         </p>
 
         <div className="statusRow">
